@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SingleOrder from "./SingleOrder";
 
 function Orders() {
 
@@ -13,7 +14,11 @@ function Orders() {
     })
    }, [])
 
-   return (<div></div>)
+   const order = orders.map(order => (
+    <SingleOrder key={order.order_id} order={order} />
+   ))
+
+   return (<div>{order}</div>)
 };
 
 export default Orders;
