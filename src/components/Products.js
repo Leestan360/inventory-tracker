@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SingleProduct from "./SingleProduct";
 
 function Products() {
 
@@ -13,7 +14,11 @@ function Products() {
     })
   }, [])
 
-  return (<div></div>)
+  const product = products.map(product => (
+    <SingleProduct key={product.product_id} product={product} />
+  ))
+
+  return (<div>{product}</div>)
 };
 
 export default Products;
