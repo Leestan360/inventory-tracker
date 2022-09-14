@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SingleUser from "./SingleUser";
 
 function Users() {
 
@@ -13,7 +14,11 @@ function Users() {
     })
   }, [])
 
-  return (<div></div>)
+  const user = users.map(user => (
+    <SingleUser key={user.user_id} user={user} />
+  ))
+
+  return (<div>{user}</div>)
 };
 
 export default Users;
