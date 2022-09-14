@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Products() {
 
@@ -15,6 +14,6 @@ function Products() {
   }, [])
 
   return (<div></div>)
-}
+};
 
 export default Products;
