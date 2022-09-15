@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react";
-import SingleUser from "./SingleUser";
+import React from "react";
 
 function Users() {
 
-  const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    fetch("https://assessment.api.vweb.app/users")
-    .then(res => res.json())
-    .then((users) => {
-      setUsers(users);
-    })
-  }, [])
-
-  const user = users.map(user => (
-    <SingleUser key={user.user_id} user={user} />
-  ))
-
-  return (<div>{user}</div>)
+  return (<div>{}</div>)
 };
 
 export default Users;

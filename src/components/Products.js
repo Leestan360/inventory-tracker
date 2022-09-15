@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from "react";
-import SingleProduct from "./SingleProduct";
+import React from "react";
 
 function Products() {
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch("https://assessment.api.vweb.app/products")
-      .then((res) => res.json())
-      .then((products) => {
-        setProducts(products);
-      });
-  }, []);
-
-  const product = products.map((product) => (
-    <SingleProduct key={product.product_id} product={product} />
-  ));
-
-  return <div>{product}</div>;
+  return <div className=" w-3/4 mx-auto my-auto p-3 h-1/2 grid grid-rows-4 grid-flow-col gap-4 overflow-auto">{}</div>;
 }
 
 export default Products;
