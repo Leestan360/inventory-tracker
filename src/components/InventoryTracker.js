@@ -9,7 +9,7 @@ function InventoryTracker() {
   const [users, setUsers] = useState([]);
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
-  const [search, setSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const urls = [
@@ -27,13 +27,15 @@ function InventoryTracker() {
   }, []);
 
 
-  
+  const queryUser = users.filter((user) => {
+    return user.name.toLowerCase().includes(searchTerm.toLowerCase()) || user.user_id.toLowerCase().includes(searchTerm.toLowerCase())
+  });
 
   return (
     <div>
       <Routes>
-        <Route exact path="/dashboard" element={<Dashboard users={users} products={products} orders={orders} />} />
-        <Route exact path="/users" element={<User users={users} />} />
+        <Route exact path="/dashboard" element={<Dashboard users={users} products={products} orders={orders} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
+        <Route exact path="/users" element={<User users={users} queryUser={queryUser}/>} />
         <Route
           exact
           path="/products"
