@@ -1,14 +1,16 @@
 import React from "react";
-import Orders from "./components/Orders";
-import Products from "./components/Products";
-import Users from "./components/Users";
+import SideBar from "./components/SideBar";
+// import Orders from "./components/Orders";
+// import Products from "./components/Products";
+// import Users from "./components/Users";
 
 function App() {
   return (
-  <div className="text-red-500">
-    <Users />
+  <div className="">
+    {/* <Users />
     <Products />
-    <Orders />
+    <Orders /> */}
+    <SideBar />
   </div>)
 }
 

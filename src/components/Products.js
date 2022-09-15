@@ -9,7 +9,6 @@ function Products() {
       .then((res) => res.json())
       .then((products) => {
         setProducts(products);
-        console.log(products);
       });
   }, []);
 

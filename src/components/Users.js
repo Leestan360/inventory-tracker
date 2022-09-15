@@ -10,7 +10,6 @@ function Users() {
     .then(res => res.json())
     .then((users) => {
       setUsers(users);
-      console.log(users)
     })
   }, [])
 

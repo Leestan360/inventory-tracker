@@ -10,7 +10,6 @@ function Orders() {
     .then(res => res.json())
     .then((orders) => {
       setOrders(orders);
-      console.log(orders)
     })
    }, [])
 
