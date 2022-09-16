@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 function SideBar() {
   return (
     <div className="flex ">
-      <div className="flex flex-col h-screen p-3 bg-white shadow w-60">
+      <div className="flex flex-col h-screen p-3 bg-white shadow w-60 pt-28">
         <div className="space-y-3 ">
           <div className="flex items-center ">
             <h2 className="text-3xl font-bold mx-auto">Admin</h2>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 pt-12">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="rounded-sm">
                 <NavLink
