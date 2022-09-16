@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 function SideBar() {
   return (
-    <div className="flex ">
-      <div className="flex flex-col h-screen p-3 bg-white shadow w-60 pt-28">
+    <div className="flex  ">
+      <div className="flex flex-col h-screen p-3 bg-white shadow w-80 pt-28">
         <div className="space-y-3 ">
           <div className="flex items-center ">
             <h2 className="text-3xl font-bold mx-auto">Admin</h2>
@@ -13,7 +13,7 @@ function SideBar() {
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="rounded-sm">
                 <NavLink
-                  to="/dashboard"
+                  to="/"
                   className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white"
                 >
                   <svg
