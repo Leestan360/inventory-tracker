@@ -9,12 +9,12 @@ function SideBar() {
           <div className="flex items-center ">
             <h2 className="text-3xl font-bold mx-auto">Admin</h2>
           </div>
-          <div className="flex-1 ">
+          <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="rounded-sm">
                 <NavLink
                   to="/dashboard"
-                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl"
+                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ function SideBar() {
               <li className="rounded-sm">
                 <NavLink
                   to="/users"
-                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl"
+                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ function SideBar() {
               <li className="rounded-sm">
                 <NavLink
                   to="/products"
-                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl"
+                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ function SideBar() {
               <li className="rounded-sm">
                 <NavLink
                   to="/orders"
-                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl"
+                  className="flex items-center p-2 space-x-3 border-2 rounded-md text-xl bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
